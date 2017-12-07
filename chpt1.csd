@@ -1,6 +1,8 @@
 <CsoundSynthesizer>
 <CsOptions>
-  -d -o dac -m0
+ -d -o outfile.aif -m0
+ -+id_artist="Katarina Hoeger"
+ -+id_date="December 5, 2017"
 </CsOptions>
 <CsInstruments>
 ; source: http://www.csounds.com/chapter1/
