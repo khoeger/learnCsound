@@ -42,5 +42,11 @@ a1    loscil  10000, 440, 4
       endin
 </CsInstruments>
 <CsScore>
+; f number load-time table-size GEN Routine parameter1 parameter2...
+;f 111 0 16 10 1 ; A sinewave with 16 pts
+f 1 0 4096 10 1
+f 2 0 4096 10 1 .5 .333 .25 .2 .166 .142 .125 .111 .1 .09 .083 .076 .071 .066 .062
+f 3 0 4097 20 2  1
+f 4 0 0    1  "sing.aif" 0 4 0
 </CsScore>
 </CsoundSynthesizer>
