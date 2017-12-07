@@ -1,5 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
+  -d -o dac -m0
 </CsOptions>
 <CsInstruments>
 ; source: http://www.csounds.com/chapter1/
@@ -7,7 +8,7 @@
 sr        =     44100 ; audio sample rate, 44.1 kHz
 kr        =     4410  ; control rate, 4410 Hz
 ksmps     =     10    ; sr/kr, # of samples in each control period
-nchnls    =     1     ; number of channels
+nchnls    =     2     ; number of channels
 
 ; orchestra syntax
 ;output  oscil amplitude,  frequency,  function #  ; COMMENT
@@ -48,5 +49,16 @@ f 1 0 4096 10 1
 f 2 0 4096 10 1 .5 .333 .25 .2 .166 .142 .125 .111 .1 .09 .083 .076 .071 .066 .062
 f 3 0 4097 20 2  1
 f 4 0 0    1  "sing.aif" 0 4 0
+
+; Note Statements
+; instrument# start-time duration
+; P1  P2  P3
+i 101 0   3
+i 102 4   3
+i 103 8   3
+i 104 12  3
+i 105 16  3
+i 106 20  3
+e 24
 </CsScore>
 </CsoundSynthesizer>
