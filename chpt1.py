@@ -1,3 +1,4 @@
+#http://www.csounds.com/chapter1/
 import ctcsound
 cs = ctcsound.Csound()
 
